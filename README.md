@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Stopwatch Coding Challenge By Mayank Gureja 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📄 Objective
+Build a Stopwatch application using ReactJS. This single-page application should have a central digital clock showing hours, minutes and seconds. 
 
-## Available Scripts
+On page load, the user should see a button to start the stopwatch. The clock should show time ticking up. Once started, the user can pause or reset the clock. 
 
-In the project directory, you can run:
+There must also be a button to record the current elapsed time and save it. The user can save as many times as they like while the stopwatch is running. Display the saved times on the page. The saved times must persist a page refresh.
 
-### `npm start`
+Feel free to design it however you wish. Slick or unique interfaces are most welcome. Use SASS instead of CSS for styling. You may use any CSS framework, if you wish.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You may use third-party libraries to support any part of this application, if you need it.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🏃‍♂️ How To Run
+You can click [here](http://YeahItsAman.github.io/stopwatch) for the live website or you can download the project and follow the steps:
+1. Open terminal
+2. Change directory to the downloaded project
+3. Type `npm intall`
+4. After the installation is complete type `npm start`
+   
+## 🐱‍💻 Technologies Used
+1. React
+2. Semantic UI
+3. React Hooks
