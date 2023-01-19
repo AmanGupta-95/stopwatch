@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
-import './stopwatch.scss';
-
 import DigitalWatch from '../components/digital-watch/digital-watch';
 import TimeLaps from '../components/time-laps/time-laps';
+
+import { Button, Container } from 'semantic-ui-react'
+import './stopwatch.scss';
+
+
 
 //session storage key
 const TIME_LAPS_KEY = 'laps';
@@ -13,7 +16,7 @@ let interval;
 
 function Stopwatch() {
 	//setting initial watch time
-	const [seconds, setSeconds] = useState(() => 55);
+	const [seconds, setSeconds] = useState(() => 0);
 	const [minutes, setMinutes] = useState(() => 0);
 	const [hours, setHours] = useState(() => 0);
 
@@ -52,6 +55,8 @@ function Stopwatch() {
 		setSeconds(0);
 		setMinutes(0);
 		setHours(0);
+		setLaps([]);
+		sessionStorage.removeItem(TIME_LAPS_KEY);
 	}
 
 	// timer useEffects
@@ -83,17 +88,22 @@ function Stopwatch() {
 		else stopTimer();
 	}, [start]);
 
+	//for storing laps in session storage
+	useEffect(() => {
+		sessionStorage.setItem(TIME_LAPS_KEY, JSON.stringify(laps));
+	}, [laps]);
+
 	return (
-		<div>
+		<Container textAlign='center'>
 			<DigitalWatch hours={hours} minutes={minutes} seconds={seconds} />
-			<div>
-				<button onClick={addLaps}>Lap</button>
-				<button onClick={() => setStart(true)}>Start</button>
-				<button onClick={() => setStart(false)}>Stop</button>
-				<button onClick={resetTimer}>Reset</button>
+			<div className='btn-container'>
+				<Button disabled={!start} inverted primary onClick={addLaps}>Lap</Button>
+				<Button inverted color='green' onClick={() => setStart(true)}>Start</Button>
+				<Button disabled={!start} inverted color='red' onClick={() => setStart(false)}>Stop</Button>
+				<Button inverted color='orange' onClick={resetTimer}>Reset</Button>
 			</div>
-			<TimeLaps laps={laps}/>
-		</div>
+			<TimeLaps laps={laps} />
+		</Container>
 	);
 }
 
