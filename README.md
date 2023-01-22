@@ -13,7 +13,7 @@ You may use third-party libraries to support any part of this application, if yo
 
 
 ## 🏃‍♂️ How To Run
-You can click [here](http://YeahItsAman.github.io/stopwatch) for the live website or you can download the project and follow the steps:
+You can click [here](http://amangupta-95.github.io/stopwatch) for the live website or you can download the project and follow the steps:
 1. Open terminal
 2. Change directory to the downloaded project
 3. Type `npm intall`
